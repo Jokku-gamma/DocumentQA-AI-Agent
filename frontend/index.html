@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI PDF Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="chat-header">
+            <i class="fas fa-robot"></i>
+            <h1>AI PDF Chatbot</h1>
+            <span class="status-indicator" id="backend-status">Connecting...</span>
+        </div>
+        
+        <div class="uploaded-files-section">
+            <h3 class="uploaded-files-title">Uploaded PDFs:</h3>
+            <ul id="uploaded-files-list">
+                <li>No PDFs uploaded yet.</li>
+            </ul>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                Hello! Upload a PDF to get started, or ask a question about existing documents.
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <label for="file-upload" class="file-upload-button">
+                <i class="fas fa-file-upload"></i> Upload PDF
+                <input type="file" id="file-upload" accept=".pdf" multiple style="display: none;">
+            </label>
+            <input type="text" id="user-input" placeholder="Ask a question or specify a PDF">
+            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
