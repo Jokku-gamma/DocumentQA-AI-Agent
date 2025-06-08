@@ -1,0 +1,11 @@
+fastapi[all]
+openai
+chromadb
+langchain-text-splitters
+pymupdf
+python-filetype
+Pillow
+pytesseract
+arxiv
+uvicorn
+python-dotenv 
